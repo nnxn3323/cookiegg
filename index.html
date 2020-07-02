@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <title>
+    쿠키런조합추천!
+  </title>
+  <style>
+
+  </style>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="style.css" as="style" crossorigin="crossorigin"> 
+
+</head>
+<body>
+
+    <div class="menu-bar">
+      <div class="menu-bar-items">
+        <div class="menu-bar-left-items">
+        <a href="index.html">cookie.gg</a>
+        <a href="making.html">경기</a>
+        <a href="making.html">길드</a>
+        <a href="making.html">떼탈출</a>
+      </div>
+
+
+
+      <div class="menu-bar-right-items">
+        <a class="active" href="making.html">로그인</a>
+        <a href="making.html">내정보</a>
+      </div>
+    </div>
+  </div>
+
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <img src="image/waiting.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/ch.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/waiting.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="ranking-chart">
+
+  <div class="breakout-chart">
+    떼탈출 랭킹 겸 영상 테스트
+
+    <iframe src="https://www.youtube.com/embed/II6wIQ_w29Y" width="100%" height="100%"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="" style="width:100%">
+  </div>
+
+  <div class="trophy-chart">
+    트로피 랭킹
+    <img src=""style="width:100%">
+  </div>
+
+  <div class="guild-chart">
+    길드 랭킹
+    <img src=""style="width:100%">
+  </div>
+
+
+</div>
+
+
+<div class="finding-guild">
+  <div class="guild-find-title">
+    <div class="guild find-title-right">
+
+    </div>
+    <div class="guild-find-main-title">
+
+    </div>
+    <div class="guild-find-subtitle">
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+     
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+    
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+    
+    
+    
+</html>
