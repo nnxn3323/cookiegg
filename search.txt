@@ -1,0 +1,59 @@
+.container-1{
+  
+  width: 300px;
+  vertical-align:bottom;
+  white-space: nowrap;
+
+}
+.container-1 input#search{
+  width: 300px;
+  height: 30px;
+  background: #ffffff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+  color: #accbe2;
+}
+
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+  color: #accbe2;  
+}
+
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: #accbe2;  
+}
+
+.container-1 input#search:-ms-input-placeholder {  
+  color: #accbe2;  
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+  outline:none;
+  background: #ffffff;
+}
+-css-
+
+
+
+-html-
+
+
+      <div class="searchbox">
+        <div class="container-1">
+          <input type="search" id="search" placeholder="검색..." />
+        </div>
+      </div>
