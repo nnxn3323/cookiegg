@@ -84,7 +84,6 @@
 <div class="finding-guild">
   <div class="guild-find-title">
     <div class="guild find-title-right">
-      <style border=""></style>
     </div>
     <div class="guild-find-main-title">
 
@@ -127,7 +126,35 @@
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="http://jsgetip.appspot.com"></script>
+<script>
+    $(document).ready(function(){
+        var check_ip = ip();           // 접속한 기기의 IP를 가져온다
+        alert(check_ip);                
+    });
+</script>
     
-    
-    
+<script type="text/javascript" src="http://jsgetip.appspot.com"></script>
+<script>
+    $(document).ready(function(){
+        var check_ip = ip();           // 접속한 기기의 IP를 가져온다
+        var AllowIP = ["49.166.205.145","192.168.35.172","58.124.178.106","175.208.239.21","223.38.17.123"];     // 허용할 IP 배열
+        var DenyIP = ["211.33.180.101"];     // 차단할 IP 배열
+        var i = 0;
+                 
+        for (var i in AllowIP){
+            if (AllowIP[i] == check_ip) {
+                    
+                    // 허용 IP에 대한 이벤트
+            }
+        }
+        for (var i in DenyIP){
+            if (DenyIP[i] == check_ip) {
+                    // 차단 IP에 대한 이벤트
+                    alert("병신");
+            }
+        }
+    });
+</script>
+
 </html>

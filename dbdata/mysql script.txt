@@ -1,0 +1,17 @@
+CREATE SCHEMA `guildinfo` DEFAULT CHARACTER SET utf8 ;
+
+
+
+
+-table guildinfo-
+
+CREATE TABLE `guildinfo`.`guild_info` (
+  `guild_name` VARCHAR(20) NOT NULL,
+  `guild_level` INT NOT NULL,
+  `guild_rank` VARCHAR(5) NOT NULL,
+  `guild_rank_level` INT NOT NULL,
+  `guild_min_level` INT NULL,
+  `guild_min_trophy` INT NULL,
+  `guild_uniqueness` VARCHAR(60) NULL)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;

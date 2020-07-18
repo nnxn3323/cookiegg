@@ -1,0 +1,27 @@
+CREATE SCHEMA `region_champions` DEFAULT CHARACTER SET utf8 ;
+
+
+
+CREATE TABLE `region_champions`.`main_db` (
+  `region` VARCHAR(45) NOT NULL,
+  `round` INT NOT NULL,
+  `best_1_hours_name` VARCHAR(45) NOT NULL,
+  `best_1_hours_point` INT NOT NULL,
+  `winner_name` VARCHAR(45) NOT NULL,
+  `winner_point` INT NOT NULL)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+
+
+
+CREATE TABLE `region_champions`.`main_db` (
+  `region` VARCHAR(45) NOT NULL,
+  `round` INT NOT NULL,
+  `best_1_hours_name` VARCHAR(45) NOT NULL,
+  `best_1_hours_point` INT NOT NULL,
+  `winner_name` VARCHAR(45) NOT NULL,
+  `winner_point` INT NOT NULL)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
